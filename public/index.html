@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projekt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="alert-container">
+
+</div>
+
+<nav>
+    <h3 id="username-display"></h3>
+    <button id="log-out-btn">Wyloguj</button>
+</nav>
+
+
+<section id="login-register-container">
+
+    <form id="login-form" action="http://localhost/api/login.php">
+        <h2>Zaloguj się</h2>
+        <div>
+            <label for="log-in-username">Nazwa użytkownika</label>
+            <input type="text" name="log-in-username" id="log-in-username">
+        </div>
+        <div>
+            <label for="log-in-password">Hasło</label>
+            <input type="password" name="log-in-password" id="log-in-password">
+        </div>
+        <div>
+            <input type="submit" value="Zaloguj">
+        </div>
+
+    </form>
+
+    <form id="register-form" action="http://localhost/api/register.php">
+        <h2>Zarejestruj się</h2>
+        <div>
+            <label for="register-username">Nazwa użytkownika</label>
+            <input type="text" name="register-username" id="register-username">
+        </div>
+        <div>
+            <label for="register-password">Hasło</label>
+            <input type="password" name="register-password" id="register-password">
+        </div>
+        <div>
+            <input type="submit" value="Zarejestruj">
+        </div>
+    </form>
+</section>
+
+<main id="protected-content">
+
+</main>
+
+<script src="alerts.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
